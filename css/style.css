@@ -1,0 +1,272 @@
+body{
+	margin:0;
+	padding:0;
+}
+/**************header start***********/
+header{
+	/*border:3px solid purple;*/
+	padding:10px 0;
+}
+.container {
+	/*border: 1px solid red;*/
+	overflow:hidden;
+	width:80%;
+	margin:0 auto; /*the container stays at the center even when the window is resized.*/
+}
+
+.logo {
+	/*border:2px solid green;*/
+	width:20%;
+	float:left;
+}
+.logo img{   /*descendent selectors*/
+    width:100%;/*1) image responsiveness 2)image, that is logo, will now occupy the whole space;*/
+    /*do not set height. set just the height*/
+
+}
+.menu {
+	/*border: 2px solid green;*/
+	width:75%;
+	float:right;
+	margin-top:13px;
+}
+.menu ul{
+    float:right;  /*to get the ul at the very left of container*/
+}
+.menu ul li{
+    list-style:none;/*to remove the discs from <li>*/
+    float:left; /*to make the links side by side*/
+}
+.menu ul li a{
+    font-family:sans-serif;
+    font-size:16px;  /*16px is the default value*/
+    font-weight:600; /*400 is the default value*/
+    color: #535D69;
+    text-decoration:none;/*to remove the underlines from <a>*/
+    padding:0 10px;  /*to make space between the links*/
+    display:inline-block; /*when we used float:left on (.menu ul li), the anchor tags left their space
+    to correct this, we use (display:inline-block)*/
+    transition:.3s;
+}
+.menu ul li:last-child a{
+    padding-right:0; /*to remove the padding at the right of (support) link*/
+}
+.menu ul li a:hover{
+	color:#BD233F;
+}
+/********header end*************/
+/********banner start*****/
+.banner{
+	/*border:1px solid lime;*/
+	/*The 4 background properties*/
+	background-image: url("../images/businessman.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	/*background-size: cover does not need any browser support
+	however if we did want to give browser suppert, we would have
+    to write the next 2 lines along with the main code above*/
+	-webkit-background-size:cover;/*webkit to support opera, safari and chrome*/
+	-moz-background-size:cover;
+	background-position:top left;
+   
+    font-family:sans-serif;
+}
+.b_content{
+	width:50%;
+	color:white;
+	margin:125px 0 125px 0;
+}
+.b_content h1{
+	/*font-family:sans-serif;*/
+	font-size:59px;
+	/*font-weight:700; no need to write this as this is already the default value*/
+	margin-top:0;
+	text-transform:capitalize;
+
+}
+.b_content p{
+	font-size:17px;
+	margin:0 0 6px 0;
+	line-height:1.4;/*recommended line height is 16. line height can be in percentage, numbers, or pixels.*/
+}
+.b_content button{
+	/*for buttons, we can set width and height.*/
+	width:230px;
+	height:50px;
+	background-color:#BF2541;
+	border-radius:4px;
+	border:none;
+	color:white;
+	text-transform:uppercase;
+	margin-top:30px;
+	cursor:pointer;
+}
+.b_content button:focus{
+	outline:0; /*to remove the border around the button*/
+}
+/*banner end*/
+/*how it works start*/
+.how_it_works{
+	/*border:1px solid black;*/
+	padding:100px 0;
+}
+.first_part{
+	/*border:1px solid purple;*/
+	width:70%;
+	margin:0 auto;
+	font-family:sans-serif;
+	text-align:center;
+	margin-bottom:60px;
+}
+.first_part h1{
+    font-size:30px;
+    text-transform:uppercase;
+    margin:0 0 30px;
+
+}
+.first_part p{
+	font-size:15px;
+	line-height:22px;
+	word-spacing:-2px;
+	color:#535D69;
+	margin:0; 
+}
+.second_part{
+	/*border:1px solid lime;*/
+    overflow:hidden;
+}
+.box{
+	/*border:1px solid red;*/
+	float:left;
+    width:30%;
+    text-align:center;
+    margin:0 17.9px;
+}
+.box img{
+	width:35%;
+}
+.box p{
+	font-size:18px;
+	font-weight:700;
+	color:#535D69;
+}
+/*how it works end*/
+/*learn more start*/
+.learn_more{
+	/*border:1px solid purple;*/
+	background-color:#F1F1F1;
+	padding:120px 0 120px 0;
+	overflow:hidden;
+}
+.writing_part{
+	/*border: 1px solid green;*/
+    font-family: sans-serif;
+    width: 50%;
+    padding: 31px 45px 30px 0;
+    box-sizing: border-box;
+    float: left;
+}
+.writing_part h1{
+	line-height: 38px;
+	text-transform: uppercase;
+    margin:0;
+}
+.writing_part p{
+	font-size: 15px;
+    word-spacing: -2px;
+    line-height: 22px;
+    color: #535D69;
+    margin: 20px 0 20px 0;
+}
+.writing_part button{
+	width: 121px;
+    height: 40px;
+    background-color: #BF2541;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.writing_part button:focus{
+	outline:0;
+}
+.video_part{
+	/*border:1px solid purple;*/
+	width: 50%;
+    box-sizing: border-box;
+    float: right;
+}
+.video_part video{
+	width:100%;
+}
+/*learn more end*/
+
+/*Features start*/
+.features{
+	padding: 100px 0 90px 0;
+}
+.wrapper{
+	
+}
+.column{
+	overflow:hidden;
+	padding-bottom:30px;
+}
+.items{
+	/*border: 1px dotted red;*/
+    width: 30%;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0px 15px 0 15px;
+    box-sizing: border-box;
+    margin: 0 17.9px;
+    float:left;
+}
+.items img{
+	width:100%;
+}
+.items h2{
+	font-size: 20px;
+    margin: 0;
+}
+.items p{
+	font-size: 15px;
+    word-spacing: -2px;
+    line-height: 22px;
+    color: #535D69;
+    margin:15px 0 15px 0;
+}
+.features_button{
+	text-align:center;
+}
+.features_button button{
+	width: 149px;
+    height: 34px;
+    background-color: white;
+    color: #BF2541;
+    border: none;
+    border-radius:4px;
+    box-shadow: 2px 3px 8px grey;
+    font-family: sans-serif;
+    font-weight: 700;
+    word-spacing: -1px;
+    text-transform: uppercase;
+    margin:90px 0 10px 0; /*the 10 px margin bottom is adjusted by reducing the padding:bottom of features section by 10px*/
+    cursor: pointer;
+}
+.features_button button:focus{
+	outline:0;
+}
+
+/*Features end*/
+
+/*footer start*/
+footer{
+	background-color:#535D69;
+	color:white;
+	text-align:center;
+}
+/*footer end*/
